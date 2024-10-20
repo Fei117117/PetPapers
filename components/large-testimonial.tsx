@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function LargeTestimonial() {
   return (
@@ -23,7 +23,7 @@ export default function LargeTestimonial() {
               </svg>
               <Image
                 className="rounded-full"
-                src={TestimonialImg}
+                src={`${basePath}/images/dog-03.png`}
                 width={48}
                 height={48}
                 alt="Large testimonial"
