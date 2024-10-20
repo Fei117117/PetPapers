@@ -21,7 +21,7 @@ export default function LargeTestimonial() {
                   fill="#D1D5DB"
                 />
               </svg>
-              <Image
+              <img
                 className="rounded-full"
                 src={`${basePath}/images/dog-03.png`}
                 width={48}
