@@ -1,28 +1,8 @@
 "use client";
-import { useRef } from "react";
+
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function FeaturesSection() {
-  // Create a ref for the scrollable container
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  // Function to scroll to the left
-  const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: -270, // Adjust this value to control the scroll distance
-        behavior: "smooth",
-      });
-    }
-  };
-  // Function to scroll to the right
-  const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
-        left: 270, // Adjust this value to control the scroll distance
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <section className="relative mx-auto max-w-6xl px-4 sm:px-6 py-16 text-center">
       {/* Section Header */}
@@ -37,19 +17,10 @@ export default function FeaturesSection() {
               How to Use This Website
             </span>
           </div>
-          <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-orange-300 text-white rounded-full p-1 shadow-md hover:bg-orange-400 lg:hidden" // lg:hidden hides the button on large screens
-            onClick={scrollLeft}
-          >
-            {"<"}
-          </button>
 
           <div className="font-mono text-gray-700">
             {/* Flex container with horizontal scroll on mobile */}
-            <div
-              className="flex flex-nowrap justify-around items-center space-x-8 overflow-x-auto scrollbar-hide"
-              ref={scrollContainerRef}
-            >
+            <div className="flex flex-nowrap justify-around items-center space-x-8 overflow-x-auto">
               {/* Step 1 */}
               <div className="text-center min-w-[250px]">
                 <img
@@ -58,7 +29,7 @@ export default function FeaturesSection() {
                   style={{ width: "40px", height: "40px" }}
                   className="mx-auto"
                 />
-                <span className="block mt-5 text-orange-800">
+                <span className="block mt-4 text-orange-800">
                   Tell your pet’s marvelous life story and upload your favorite
                   photos with our simple, easy-to-use online tool!
                 </span>
@@ -72,7 +43,7 @@ export default function FeaturesSection() {
                   style={{ width: "40px", height: "40px" }}
                   className="mx-auto"
                 />
-                <span className="block mt-5 text-orange-800">
+                <span className="block mt-4 text-orange-800">
                   Heal at your own pace, with full flexibility. Simply let us
                   know when you’re finished.
                 </span>
@@ -86,18 +57,11 @@ export default function FeaturesSection() {
                   style={{ width: "40px", height: "40px" }}
                   className="mx-auto"
                 />
-                <span className="block mt-5 text-orange-800">
+                <span className="block mt-4 text-orange-800">
                   Sit back while we deliver a beautiful keepsake book full of
                   your stories and photos to cherish forever.
                 </span>
               </div>
-              {/* Right Scroll Button (visible only on mobile) */}
-              <button
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-orange-300 text-white rounded-full p-1 shadow-md hover:bg-orange-400 lg:hidden" // lg:hidden hides the button on large screens
-                onClick={scrollRight}
-              >
-                {">"}
-              </button>
             </div>
           </div>
         </div>
