@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Logo() {

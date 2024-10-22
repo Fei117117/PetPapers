@@ -3,6 +3,7 @@ import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
 import { SetStateAction, useState } from "react";
 import emailjs from "emailjs-com";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 // import Avatar01 from "@/public/images/avatar-01.jpg";
 // import Avatar02 from "@/public/images/avatar-02.jpg";
 // import Avatar03 from "@/public/images/avatar-03.jpg";
@@ -197,7 +198,12 @@ export default function HeroHome() {
               <div className="font-mono text-gray-700">
                 {/* Step 1 */}
                 <div className="mb-4">
-                  <span className="text-orange-600 font-bold">Step 1:</span>
+                  {/* <span className="text-orange-600 font-bold">Step 1:</span> */}
+                  <img
+                    src={`${basePath}/images/one.png`}
+                    alt="Number One Icon"
+                    style={{ width: "20px", height: "20px" }}
+                  />
                   <br />
                   <span className="animate-[code-1_10s_infinite] text-orange-800">
                     register
@@ -213,7 +219,12 @@ export default function HeroHome() {
 
                 {/* Step 2 */}
                 <div className="mb-4">
-                  <span className="text-orange-600 font-bold">Step 2:</span>
+                  {/* <span className="text-orange-600 font-bold">Step 2:</span> */}
+                  <img
+                    src={`${basePath}/images/two.png`}
+                    alt="Number Two Icon"
+                    style={{ width: "20px", height: "20px" }}
+                  />
                   <br />
                   <span className="animate-[code-5_10s_infinite] text-orange-800">
                     subscribe and pay
@@ -225,7 +236,12 @@ export default function HeroHome() {
                 </div>
                 {/* Step 3 */}
                 <div className="mb-4">
-                  <span className="text-orange-600 font-bold">Step 3:</span>
+                  {/* <span className="text-orange-600 font-bold">Step 3:</span> */}
+                  <img
+                    src={`${basePath}/images/three.png`}
+                    alt="Number Three Icon"
+                    style={{ width: "20px", height: "20px" }}
+                  />
                   <br />
                   <span className="animate-[code-5_10s_infinite] text-orange-800">
                     Answer questions
