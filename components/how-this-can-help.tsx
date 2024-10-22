@@ -9,7 +9,7 @@ export default function FeaturesPlanet() {
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
             <div className="flex items-center justify-center space-x-4">
               <h2 className="text-3xl font-bold text-black-200 md:text-4xl">
-                How This Can Help Me
+                How PetPapers Helps You
               </h2>
               <img
                 className="rounded-full bg-gray-900"
@@ -20,7 +20,6 @@ export default function FeaturesPlanet() {
               />
             </div>
           </div>
-
           {/* Planet */}
           <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
             <div className="text-center">
