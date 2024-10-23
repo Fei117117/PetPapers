@@ -13,8 +13,8 @@ export default function BusinessCategories() {
                 <div className="animate-[breath_8s_ease-in-out_infinite_both]">
                   <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                     <img
-                      className="relative"
-                      src={`${basePath}/images/dog.jpg`}
+                      className="relative h-full w-full rounded-full object-cover"
+                      src={`${basePath}/images/monkey.png`}
                       width={32}
                       height={32}
                       alt="Logo 01"
