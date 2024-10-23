@@ -20,7 +20,7 @@ export default function FeaturesSection() {
 
           <div className="font-mono text-gray-700">
             {/* Flex container with horizontal scroll on mobile */}
-            <div className="flex flex-nowrap justify-around items-center space-x-8 overflow-x-auto">
+            <div className="features-container flex flex-wrap justify-center md:flex-nowrap items-center space-x-0 md:space-x-8 md:overflow-x-auto">
               {/* Step 1 */}
               <div className="text-center min-w-[250px]">
                 <img
@@ -29,7 +29,7 @@ export default function FeaturesSection() {
                   style={{ width: "40px", height: "40px" }}
                   className="mx-auto"
                 />
-                <span className="block mt-4 text-orange-800">
+                <span className="block mt-4 text-orange-800 mb-6">
                   Tell your pet’s marvelous life story and upload your favorite
                   photos with our simple, easy-to-use online tool!
                 </span>
@@ -43,7 +43,7 @@ export default function FeaturesSection() {
                   style={{ width: "40px", height: "40px" }}
                   className="mx-auto"
                 />
-                <span className="block mt-4 text-orange-800">
+                <span className="block mt-4 text-orange-800 mb-6">
                   Heal at your own pace, with full flexibility. Simply let us
                   know when you’re finished.
                 </span>

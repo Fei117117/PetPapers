@@ -10,6 +10,8 @@ import LargeTestimonial from "@/components/large-testimonial";
 import Cta from "@/components/cta";
 import Help from "@/components/how-this-can-help";
 import Feature from "@/components/feature";
+import Email from "@/components/email";
+import Story from "@/components/our-story";
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
       <Hero />
       <Feature />
       <Help />
+      <Email />
       <LargeTestimonial />
+      <Story />
 
       {/* <BusinessCategories /> */}
       {/* <FeaturesPlanet /> */}
