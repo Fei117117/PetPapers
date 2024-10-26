@@ -23,10 +23,10 @@ export default function FeaturesPlanet() {
           {/* Planet */}
           <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
             <div className="text-center">
-              <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-gradient-to-b before:from-orange-300 before:to-white-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,theme(colors.white.500),transparent)]">
+              <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85]">
                 <div className="pointer-events-none" aria-hidden="true">
                   <p
-                    className="mb-8 text-gray-700"
+                    className="mb-8 mx-10 text-gray-700"
                     data-aos="zoom-y-out"
                     data-aos-delay={300}
                   >
@@ -36,7 +36,7 @@ export default function FeaturesPlanet() {
                     the hurt we feel.
                   </p>
                   <p
-                    className="mb-8 text-gray-700"
+                    className="mb-8 mx-10 text-gray-700"
                     data-aos="zoom-y-out"
                     data-aos-delay={300}
                   >
@@ -46,7 +46,7 @@ export default function FeaturesPlanet() {
                     healing together through the power of storytelling.
                   </p>
                   <p
-                    className="mb-8 text-gray-700"
+                    className="mb-8 mx-10 text-gray-700"
                     data-aos="zoom-y-out"
                     data-aos-delay={300}
                   >
@@ -55,7 +55,7 @@ export default function FeaturesPlanet() {
                     your story flow effortlessly!
                   </p>
                   <p
-                    className="mb-8 text-gray-700"
+                    className="mb-8 mx-10 text-gray-700"
                     data-aos="zoom-y-out"
                     data-aos-delay={300}
                   >

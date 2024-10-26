@@ -9,7 +9,7 @@ export default function BusinessCategories() {
           <div className="relative flex flex-col items-center justify-center">
             {/* Blue glow */}
             <div className="relative mb-12" /* Added margin-bottom */>
-              <div className="before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,theme(colors.orange.500))_border-box]">
+              <div className="before:absolute before:-inset-3 before:animate-[spin_3s_linear_infinite] before:rounded-full before:border before:border-transparent before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] before:[background:conic-gradient(from_180deg,transparent,theme(colors.blue.500))_border-box]">
                 <div className="animate-[breath_8s_ease-in-out_infinite_both]">
                   <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-lg shadow-black/[0.03] before:absolute before:inset-0 before:m-[8.334%] before:rounded-[inherit] before:border before:border-gray-700/5 before:bg-gray-200/60 before:[mask-image:linear-gradient(to_bottom,black,transparent)]">
                     <img
@@ -23,14 +23,17 @@ export default function BusinessCategories() {
                 </div>
               </div>
             </div>
+            <h2 className="text-3xl font-bold text-black-200 md:text-4xl mb-4">
+              Our Story
+            </h2>
 
             {/* Text placed directly below the circle */}
             <div className="pb-16 md:pb-20" data-aos="zoom-y-out">
               <div className="text-center">
-                <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-gradient-to-b before:from-orange-300 before:to-white-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,theme(colors.white.500),transparent)]">
+                <div className="relative inline-flex rounded-full before:absolute">
                   <div className="pointer-events-none" aria-hidden="true">
                     <p
-                      className="mb-8 text-gray-700"
+                      className="mb-8 mx-10 text-gray-700"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
@@ -40,7 +43,7 @@ export default function BusinessCategories() {
                     </p>
 
                     <p
-                      className="mb-8 text-gray-700"
+                      className="mb-8 mx-10 text-gray-700"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
@@ -51,18 +54,20 @@ export default function BusinessCategories() {
                     </p>
 
                     <p
-                      className="mb-8 text-gray-700"
+                      className="mb-8 mx-10 text-gray-700"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
-                      We figured "we all have spectacular memories with our
-                      pets, so why not help others benefit from the power of
-                      storytelling & cherish those memories forever, just as we
-                      had?"
+                      We figured
+                      <em>
+                        "we all have spectacular memories with our pets, so why
+                        not help others benefit from the power of storytelling &
+                        cherish those memories forever, just as we had?"
+                      </em>
                     </p>
 
                     <p
-                      className="mb-8 text-gray-700"
+                      className="mb-8 mx-10 text-gray-700"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >
@@ -73,7 +78,7 @@ export default function BusinessCategories() {
                     </p>
 
                     <p
-                      className="text-gray-700"
+                      className="mx-10 text-gray-700"
                       data-aos="zoom-y-out"
                       data-aos-delay={300}
                     >

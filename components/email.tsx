@@ -64,7 +64,7 @@ export default function HeroHome() {
         <div className="pb-12 text-center md:pb-16">
           <div className="mx-auto max-w-3xl">
             {/* Email subscription form */}
-            <div className="relative before:absolute before:inset-0 before:[border-image:linear-gradient(to_right,transparent,theme(colors.orange.300/.8),transparent)1]">
+            <div className="relative before:absolute before:inset-0 before:[border-image:linear-gradient(to_right,transparent,theme(colors.blue.300/.8),transparent)1]">
               <form
                 className="mx-auto max-w-lg sm:flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
                 data-aos="zoom-y-out"
@@ -76,12 +76,12 @@ export default function HeroHome() {
                   placeholder="Enter your email"
                   value={email}
                   onChange={handleEmailChange}
-                  className="w-full sm:w-auto px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-orange-500 focus:ring focus:ring-orange-200 transition-all duration-300 shadow-lg"
+                  className="w-full sm:w-auto px-4 py-3 rounded-lg border-2 border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition-all duration-300 shadow-lg"
                   required
                 />
                 <button
                   type="submit"
-                  className="btn group w-full sm:w-auto bg-gradient-to-r from-orange-300 to-orange-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gradient-to-l hover:from-blue-700 hover:to-blue-600"
+                  className="btn group w-full sm:w-auto bg-gradient-to-r from-blue-300 to-blue-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gradient-to-l hover:from-blue-700 hover:to-blue-600"
                 >
                   Notify Me
                 </button>
